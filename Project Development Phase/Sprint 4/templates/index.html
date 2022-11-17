@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirtualEye - Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://kit.fontawesome.com/8b9cdc2059.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">VirtualEye</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('login')}}">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('register')}}">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('register')}}">Predict</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{url_for('logout')}}">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img class="d-block w-100" src="../static/drown1.jpg" alt="Drowning Image" >
+    <section id="about">
+        <div class="top">
+            <h3 class="title text-muted">
+                ABOUT PROJECT
+            </h3>
+            <div class="line"></div>
+        </div>
+        <div class="body">
+            <div class="left">
+                <h2>Problem</h2>
+                <p><i>
+                    Swimming is one of the best exercises that helps people to reduce stress in this urban lifestyle.
+                    Swimming pools are found larger in number in the hotels, weekend tourist spots and barely people
+                    have in their house backyard. Beginners, especially often feel it difficult to breathe under water
+                    and causes breathing trouble which in turn cause a drowning accident. Worldwide, drowning produces a
+                    higher rate of mortality without causing injury to children. Children under six of their age are
+                    found to be suffering the highest drowning mortality rates worldwide..Such kinds of deaths account
+                    for the third cause of unplanned death globally, with about 1.2 million cases yearly.
+
+                </i></p>
+            </div>
+            <div class="left">
+                <h2>Solution:</h2>
+                <p><i>
+                    To overcome the conflict, a meticulous system is to be implemented along the swimming pools to save
+                    the human life. By studying body movement patterns and connecting cameras to an artificial
+                    intelligence (AI)system we can devise an underwater pool safety system that reduces the risk of
+                    drowning. Usually such systems can be developed by installing more than 16 cameras underwater and
+                    ceiling and analysing the video feeds to detect any anomalies . but AS a POC we make use of one
+                    camera that streams the video underwater and analyses the position of swimmers to assess the
+                    probability of drowning ,if it is higher than an alert will be generated to attract lifeguards
+                    attention.
+
+                </i></p>
+            </div>
+        </div>
+        <div class="bottom">
+            <p><b>
+                    Note : The system is not designed to replace a lifeguard or other human monitor, but to act as an
+                    additional tool. It helps the lifeguard to detect the underwater situation where they can't easily
+                    observe.
+                </b></p>
+
+        </div>
+    </section>
+
+    <section id="footer">
+        <p>Copyright © 2021. All Rights Reserved</p>
+    </section>
+</body>
+
+</html>
